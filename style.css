@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+/* **********Resete css */
+*, 
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+a{
+    text-decoration: none;
+    color: aquamarine
+}
+body{
+    background-color: #0A192F;
+    width: 100%;
+    height: 100vh;
+    color: #7fffd4;
+    /* overflow-x: hidden; */
+}
+header{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+    justify-content: space-between;    
+}
+/* header.fixe{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: whitesmoke;
+    transition: 0.5s ease-out; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    border-radius: 0px 0px 8px 8px ;
+} */
+.nav-right{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 30px;
+    margin-right: 20px;
+    width: 40%;
+    color: aquamarine;
+    /* padding: 10px; */
+}
+.logo{
+    width: 50%;
+}
+.logo img{
+    cursor: pointer;
+    
+}
+.nav-right li {
+    /* display: block; */
+    /* border: aquamarine 2px solid; */
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: 0.2s all ease;
+    position: relative;
+}
+
+.nav-right li::before{
+    background: aquamarine;
+    content: "";
+    position: absolute;
+    top: 30px;
+    width: 0%;
+    height: 2px;
+    transition: 0.2s all ease;
+}
+.nav-right li:hover::before {
+    cursor: pointer;
+    width: 100%;
+    /* border-radius: 8px; */
+    
+}
+
+/************************************* FIN HEADER NAV BAR  */
+/************************************* DEBUT INTRO   */
+
+.introduction{
+    width: 70%;
+    height: 90vh;
+    margin: auto;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.intro p:nth-of-type(2){
+    color: grey;
+    font-weight: 400;
+}
+h1{
+    font-size: 20px;
+}
+.introduction div h2{
+    font-size: 60px;
+    font-family: 'El Messiri', sans-serif;
+}
+.introduction div h3{
+    font-size: 40px;
+    margin-top: 5px;
+    color: grey;
+    opacity: 0.;
+}
+.languageIcons{
+    display: flex;
+    gap: 50px;
+    margin: 40px 0px;
+
+}
+.languageIcons i{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all ease-out 0.5s;
+}
+.languageIcons i:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/************************************* DEBUT PRESENTATIOON  */
+
+#presentation, #projets{
+    width: 70%;
+    height: 90vh;
+    margin: auto;
+}
+#presentation, #projets h3{
+    font-family: 'El Messiri', sans-serif;
+    font-size: 30px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-top: 4%;
+    /* border: 5px solid yellow; */
+    overflow: hidden ;
+    padding: 3%;
+}
+.container a{
+    width: 25%;
+    height: 500px;
+    background: #000;
+    border-radius: 10px;
+    transition: all 0.8s ease;
+}
+.card img{
+    border-radius: 10px 10px 0px 0px;
+    background-position: center;
+    background-size: cover;
+}
+.container a:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    margin-top: 5%; 
+ }

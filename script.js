@@ -1,0 +1,25 @@
+const text = document.querySelector('.animation_text')
+
+new Typewriter(text, {
+    deleteSpeed: 100,
+    loop: true
+})
+.changeDelay(40)
+.typeString("Je suis débutant dans le monde du dévéloppement Web ")
+.pauseFor(300)
+.typeString("<span style='color:#FF4500;' >#HTML")
+.pause(1000)
+.deleteChars(5)
+.changeDelay(60)
+.typeString("<span style='color:#2965f1;' >#CSS")
+.pause(1000)
+.deleteChars(4)
+.typeString("<span style='color:#f7df1e;' >#JavaScript")
+.pause(1000)
+.changeDeleteSpeed(30)
+.deleteChars(11)
+.changeDeleteSpeed(100)
+.typeString("<span style='color:#4F5D95;' >#PHP")
+.pause(1000)
+.deleteChars(4)
+.start()
