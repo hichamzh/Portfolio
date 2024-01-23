@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Découvrez mon portfolio présentant une variété de projets, des sites web aux applications. Explorez mes créations où la technologie rencontre la créativité. Chaque projet raconte une histoire unique, façonnée avec passion et expertise dans le développement web et les applications mobiles.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" loading="lazy">
+    <script src="script.js" defer></script>
+
+
+    <title>Hicham Zouit | Portfolio</title>
+</head>
+
+<body>
+    <div class="blur"></div>
+    <div class="blur2"></div>
+    <main id="home">
+
+
+        <header>
+            <nav>
+                <div>
+                    <p class="opc">hicham</p>
+
+                    <ul class="nav_bar">
+                        <li class="line opc">
+                            <a href="#tools">
+                                Tools
+                            </a>
+                        </li>
+                        <li class="line opc">
+                            <a href="#projets">
+                                mes projets
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="contact opc">
+
+                        <a href="/Contact/contact.html">
+
+                            Contacter moi
+                        </a>
+
+
+                    </button>
+                </div>
+            </nav>
+
+        </header>
+
+        <section class="container_home">
+            <div class="text_presentation">
+                <p class="opc-txt">Salut,</p>
+                <p class="size-40 opc-txt">Je suis Hicham,</p>
+                <h1 class="size-40 opc-txt">Développeur Web Junior</h1>
+                <p class="opc-txt">Je suis un passionné de codage, j'ai fais une formation de 7 mois chez Simplon. Mon
+                    enthousiasme pour la
+                    programmation me pousse à poursuivre une carrière dans le développement.</p>
+                <button class="">
+
+                    <a href="./Assets/HICHAM CV.pdf" download="CV_Hicham_Zouit" class="opc-txt">
+                        Télécharger mon cv
+
+                    </a>
+                </button>
+            </div>
+            <div class="container_img">
+                <picture>
+                    <source media="(max-width: 816px)" srcset="Assets/Programming2.webp" width="250" height="250" />
+                    <source media="(min-width: 817px)" srcset="Assets/Programming.webp" width="300" height="300" />
+                    <img src="Assets/Programming2.webp"
+                        srcset="Assets/Programming.webp 817w, Assets/Programming2.webp 816w"
+                        sizes="(max-width: 816px) 100vw, 817px" alt="gif d'un homme qui code">
+                </picture>
+
+
+                <!-- <img fetchpriority="high" src="/Assets/Programming.webp" alt="gif d'un homme qui code" width="640"
+                    height="360"> -->
+            </div>
+        </section>
+    </main>
+
+    <section id="tools">
+        <h2>Les outils que j'utilise</h2>
+        <div class="container_tools">
+            <section class="container_1">
+                <div class="tools">
+                    <div class="img_logo">
+                        <img src="/Assets/vscode.webp" alt="logo VsCode" width='54px' height="54px">
+                    </div>
+                    <p class="tools_text">VsCode</p>
+                </div>
+                <div class="tools">
+                    <div class="img_logo">
+                        <img src="/Assets/figma.png" alt="logo figma" width='54px' height="54px">
+                    </div>
+                    <p class="tools_text">Figma</p>
+                </div>
+                <div class="tools">
+                    <div class="img_logo">
+                        <img src="/Assets/github.png" alt="logo GitHub" width='54px' height="54px">
+                    </div>
+                    <p class="tools_text">GitHub</p>
+                </div>
+            </section>
+            <section class="container_1">
+
+                <div class="tools">
+                    <div class="img_logo">
+                        <img src="/Assets/html.png" alt="logo HTML" width='54px' height="54px">
+                    </div>
+                    <p class="tools_text">HTML</p>
+                </div>
+                <div class="tools ">
+                    <div class="img_logo">
+                        <img src="/Assets/css-3.png" alt="logo CSS" width='54px' height="54px">
+                    </div>
+                    <p class="tools_text">CSS</p>
+                </div>
+                <div class="tools">
+                    <div class="img_logo js">
+                        <img src="/Assets/js.png" alt="logo JavaScript" width='54px' height="54px">
+                    </div>
+                    <p class="tools_text">JavaScript</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section id="projets">
+        <div class="container_projets">
+            <div class="text_projets">
+                <h3>Mes projets</h3>
+                <p>Découvrez mes projets</p>
+                <div class="butt_projets">
+                    <a href="./Projets/projet.html">tous mes projets</a>
+
+                    <img src="/Assets/arrow_top.png" alt="fleche" width="24px" height="24px">
+                </div>
+            </div>
+            <div class="projets">
+                <div class="card_projet">
+                    <img src="./Assets/meteo_projet.webp" alt="projet meteo" width="auto" height="auto">
+                    <a href="https://meteoappbyhicham.netlify.app/" target="_blank">Application météo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2023 Mon Site Web</p>
+        <p>Contact : zouit.hicham1@gmail.com</p>
+        <a href="https://github.com/hichamzh" target="_blank">Mon GitHub</a>
+    </footer>
+
+    <div class="top_website"><img src="/Assets/arrow_top.png" alt="button pour remonter tous en haut du site"
+            width="24px" height="24px"></button>
+</body>
+
+</html>

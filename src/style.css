@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background: #000;
+  font-family: "Poppins", sans-serif;
+  color: wheat;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: wheat;
+}
+
+li::first-letter,
+p::first-letter {
+  text-transform: capitalize;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 12px;
+  width: 330px;
+  transition: transform 300ms, opacity 300ms;
+  /* opacity: -1; */
+}
+
+.tools .img_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 15px;
+  background: white;
+  border: solid 3px black;
+}
+
+.tools_text {
+  color: wheat;
+  font-size: 25px;
+  font-weight: bold;
+}
+.tools:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.46);
+}
+.tools:hover + .tools {
+  transform: scale(0.8);
+}
+
+.tools:has(+ .tools:hover) {
+  transform: scale(0.8);
+}
