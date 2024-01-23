@@ -2,7 +2,7 @@
   <div class="tools" v-for="tool in toolData" :key="tool.name_tool">
     <div class="img_logo">
       <img
-        :src="`/src/assets/${tool.image_tool}`"
+        :src="tool.image_tool"
         :alt="'logo ' + tool.name_tool"
         width="54px"
         height="54px"

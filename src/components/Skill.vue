@@ -2,7 +2,7 @@
   <div class="tools" v-for="skill in skillData" :key="skill.name_skill">
     <div class="img_logo">
       <img
-        :src="`/src/assets/${skill.image_skill}`"
+        :src="skill.image_skill"
         :alt="'logo ' + skill.name_skill"
         width="54px"
         height="54px"
