@@ -5,7 +5,7 @@
     :key="projet.name_projet"
   >
     <img
-      :src="`/src/assets/${projet.image_projet}`"
+      :src="`public/${projet.image_projet}`"
       alt=""
       class="w-full h-64 object-cover"
     />
