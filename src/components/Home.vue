@@ -11,11 +11,7 @@
           une carrière dans le développement.
         </p>
         <button class="">
-          <a
-            href="/src/assets/HICHAM CV.pdf"
-            download="CV_Hicham_Zouit"
-            class="opc-txt"
-          >
+          <a href="HICHAM CV.pdf" download="CV_Hicham_Zouit" class="opc-txt">
             Télécharger mon cv
           </a>
         </button>
