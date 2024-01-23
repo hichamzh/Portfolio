@@ -4,11 +4,7 @@
     v-for="projet in projet_data"
     :key="projet.name_projet"
   >
-    <img
-      :src="`public/${projet.image_projet}`"
-      alt=""
-      class="w-full h-64 object-cover"
-    />
+    <img :src="projet.image_projet" alt="" class="w-full h-64 object-cover" />
     <div class="p-6">
       <h2 class="text-2xl font-bold text-gray-800 mb-2">
         {{ projet.name_projet }}
